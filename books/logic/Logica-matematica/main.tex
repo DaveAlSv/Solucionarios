@@ -1,0 +1,35 @@
+\documentclass[portuguese,12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{babel}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{enumitem}
+\usepackage[
+  backend=bibtex,
+  style=alphabetic,
+  sorting=ynt
+]{biblatex}
+\addbibresource{bibliography.bib}
+
+\title{Lógica Matemática - Soluções}
+
+\newcommand{\cqd}{\hfill $\square$}
+\newenvironment{solucao}[1][]{\noindent\textbf{Solução#1:} }{\cqd}
+\newcounter{ex}
+\newtheorem{exercicio}[ex]{Exercício}
+\DeclareMathOperator{\dom}{dom}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\include{chapters/ch1}
+
+\printbibliography
+
+\end{document}
