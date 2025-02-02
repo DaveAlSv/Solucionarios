@@ -8,7 +8,7 @@
 
 
 ## Objetivo
-Resolver todos os exercícios do livro [Lógica Matemática](https://amzn.to/406QnFf) de *Rogério Augusto dos Santos Fajardo*.
+Resolver todos os exercícios do livro [Lógica Matemática](https://amzn.to/40FILs8) de *Rogério Augusto dos Santos Fajardo*.
 
 ## Capitulos feitos
 - capitulo 1
