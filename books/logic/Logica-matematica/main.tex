@@ -8,6 +8,7 @@
 \usepackage{babel}
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{enumitem}
+\usepackage{float}
 \usepackage[
   backend=bibtex,
   style=alphabetic,
@@ -15,21 +16,25 @@
 ]{biblatex}
 \addbibresource{bibliography.bib}
 
-\title{Lógica Matemática - Soluções}
+\title{ Lógica Matemática - Soluções}
 
 \newcommand{\cqd}{\hfill $\square$}
 \newenvironment{solucao}[1][]{\noindent\textbf{Solução#1:} }{\cqd}
 \newcounter{ex}
+\newcounter{th}
 \newtheorem{exercicio}[ex]{Exercício}
+\newtheorem{theorem}[th]{Teorema}
+\renewcommand{\theth}{\arabic{chapter}.\arabic{th}}
 \DeclareMathOperator{\dom}{dom}
 
 \begin{document}
 
-\maketitle
-\tableofcontents
+  \maketitle
+  \tableofcontents
 
-\include{chapters/ch1}
+  \include{chapters/ch1}
+  \include{chapters/ch2}
 
-\printbibliography
+  \printbibliography
 
 \end{document}
